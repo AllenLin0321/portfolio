@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import Seo from "../components/Seo"
+import React from 'react'
+import { Link } from 'gatsby'
+import Seo from '../components/Seo'
 
 const Error = () => {
   return (

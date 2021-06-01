@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const Title = () => {
   return <h2>title component</h2>
