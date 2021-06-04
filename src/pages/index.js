@@ -10,6 +10,7 @@ const IndexPage = ({ data }) => {
   const { nodes: proejects } = data.allStrapiProject
   return (
     <>
+      <Seo title="Home" />
       <main>
         <Hero />
         <Services />
