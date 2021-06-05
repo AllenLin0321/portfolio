@@ -10,15 +10,15 @@ const ProjectTemplate = ({ data }) => {
       <Seo title={title.toUpperCase()} description={description} image={image.localFile.publicURL} />
       <main className="project-template-page">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
       </main>
     </>
   )
 }
 
 export const query = graphql`
-  query singleProject($title: String) {
-    strapiProject(title: { eq: $title }) {
+  query singleProject($slug: String) {
+    strapiProject(slug: { eq: $slug }) {
       title
       description
       image {

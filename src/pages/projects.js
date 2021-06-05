@@ -9,7 +9,7 @@ const ProjectsPage = ({ data }) => {
     <>
       <Seo title="Projects" />
       <main className="projects-page">
-        <Projects title="all projects" projects={proejects} />
+        <Projects title="作品集" projects={proejects} />
       </main>
     </>
   )
@@ -17,7 +17,7 @@ const ProjectsPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject {
+    allStrapiProject(sort: { fields: order }) {
       nodes {
         image {
           localFile {

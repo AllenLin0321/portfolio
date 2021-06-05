@@ -12,7 +12,7 @@ const Project = ({ index, description, title, github, stack, url, image, slug })
         <Link to={`/projects/${slug}`} className="project-slug">
           <h3>{title}</h3>
         </Link>
-        <p className="project-desc">{description}</p>
+        <p className="project-desc" dangerouslySetInnerHTML={{ __html: description }}></p>
         <div className="project-stack">
           {stack.map(item => {
             return <span key={item.id}>{item.title}</span>

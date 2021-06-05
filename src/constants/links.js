@@ -6,7 +6,7 @@ const data = [
   },
   {
     id: 2,
-    text: '關於',
+    text: '關於我',
     url: '/about/',
   },
   {

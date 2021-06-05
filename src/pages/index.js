@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
         <Hero />
         <Services />
         <Jobs />
-        <Projects showLink title="featured projects" projects={proejects} />
+        <Projects showLink title="作品集" projects={proejects} />
       </main>
     </>
   )
@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject(filter: { featured: { eq: true } }) {
+    allStrapiProject(filter: { featured: { eq: true } }, sort: { fields: order, order: ASC }) {
       nodes {
         image {
           localFile {
@@ -47,5 +47,4 @@ export const query = graphql`
     }
   }
 `
-
 export default IndexPage

@@ -5,7 +5,6 @@ import Seo from '../components/Seo'
 
 const About = ({ data }) => {
   const { title, info, stack, image } = data.strapiAbout
-  console.log('info: ', info)
   return (
     <>
       <Seo title="About" />

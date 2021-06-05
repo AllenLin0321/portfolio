@@ -1,7 +1,16 @@
 import React from 'react'
+import styled from 'styled-components'
 import Title from './Title'
 import Project from './Project'
 import { Link } from 'gatsby'
+import { FaArrowRight } from 'react-icons/fa'
+
+const ShowMoreBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 const Projects = ({ showLink = false, title, projects }) => {
   return (
     <section className="section projects">
@@ -13,7 +22,10 @@ const Projects = ({ showLink = false, title, projects }) => {
       </div>
       {showLink && (
         <Link to="/projects" className="btn center-btn">
-          projects
+          <ShowMoreBtn>
+            看更多
+            <FaArrowRight className="social-icon" />
+          </ShowMoreBtn>
         </Link>
       )}
     </section>
