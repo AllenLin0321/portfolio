@@ -5,6 +5,7 @@ import Seo from '../components/Seo'
 
 const About = ({ data }) => {
   const { title, info, stack, image } = data.strapiAbout
+  console.log('info: ', info)
   return (
     <>
       <Seo title="About" />
@@ -13,7 +14,7 @@ const About = ({ data }) => {
           <img src={image.localFile.publicURL} alt={title} className="about-img-svg" />
           <article className="about-text">
             <Title title={title} />
-            <p>{info}</p>
+            <p dangerouslySetInnerHTML={{ __html: info }}></p>
             <div className="about-stack">
               {stack.map(itme => {
                 return <span key={itme.id}>{itme.title}</span>

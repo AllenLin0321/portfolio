@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import { graphql } from 'gatsby'
 import Seo from '../../components/Seo'
 

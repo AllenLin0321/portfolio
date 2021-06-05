@@ -4,7 +4,7 @@ import services from '../constants/services'
 const Services = () => {
   return (
     <section className="section bg-grey">
-      <Title title="services" />
+      <Title title="服務" />
       <div className="section-center services-center">
         {services.map(service => {
           const { id, icon, title, text } = service
@@ -13,7 +13,7 @@ const Services = () => {
               {icon}
               <h4>{title}</h4>
               <div className="underline"></div>
-              <p>{text}</p>
+              <p dangerouslySetInnerHTML={{ __html: text }}></p>
             </article>
           )
         })}

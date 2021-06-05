@@ -14,7 +14,7 @@ const Hero = () => {
             <h1>I'm Allen</h1>
             <h4>Front-end and Mobile APP Developer</h4>
             <Link to="/contact" className="btn">
-              contact me
+              與我聯繫
             </Link>
             <div className="social-links">
               {socialLinks.map(link => {

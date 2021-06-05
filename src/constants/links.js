@@ -1,22 +1,22 @@
 const data = [
   {
     id: 1,
-    text: 'home',
+    text: '首頁',
     url: '/',
   },
   {
     id: 2,
-    text: 'about',
+    text: '關於',
     url: '/about/',
   },
   {
     id: 3,
-    text: 'projects',
+    text: '作品',
     url: '/projects/',
   },
   {
     id: 5,
-    text: 'contact',
+    text: '聯絡我',
     url: '/contact/',
   },
 ]
