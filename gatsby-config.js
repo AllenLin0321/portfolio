@@ -2,10 +2,10 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata: {
-    title: `WebDev Portfolio`,
-    description: `Awesome WebDev Portfolio built with Gatsbt and Strapi`,
-    titleTemplate: `%s | WebDev Portfolio`,
-    url: `https://allen-portfolio.netlify.app`,
+    title: `Allen WebDev Portfolio`,
+    description: `Awesome Allen Portfolio built with Gatsby and Strapi`,
+    titleTemplate: `%s | Allen Portfolio`,
+    url: `https://allenlin.me`,
     image: `/main.png`,
   },
 

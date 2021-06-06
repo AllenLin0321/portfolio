@@ -17,7 +17,7 @@ const ProjectsPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject(sort: { fields: order }) {
+    allStrapiProject(sort: { fields: order, order: DESC }) {
       nodes {
         image {
           localFile {

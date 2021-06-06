@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allStrapiProject(filter: { featured: { eq: true } }, sort: { fields: order, order: ASC }) {
+    allStrapiProject(filter: { featured: { eq: true } }, sort: { fields: order, order: DESC }) {
       nodes {
         image {
           localFile {
