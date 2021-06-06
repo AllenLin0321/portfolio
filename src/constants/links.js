@@ -7,17 +7,17 @@ const data = [
   {
     id: 2,
     text: '關於我',
-    url: '/about/',
+    url: '/about',
   },
   {
     id: 3,
     text: '作品',
-    url: '/projects/',
+    url: '/projects',
   },
   {
     id: 5,
     text: '聯絡我',
-    url: '/contact/',
+    url: '/contact',
   },
 ]
 
