@@ -1,54 +1,23 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Allen 的作品集網站😁
 
-## 🚀 Quick start
+![](https://i.imgur.com/SXOIFvj.png)
 
-1.  **Create a Gatsby site.**
+✏️ 練習使用Gatsby製作自己的作品集網站，同時練習Netlify以及Heroku的部屬流程以及Web Hooks的使用。
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+🖥前端使用Gatsby製作，練習使用官方提供的Plugins，如圖片優化以及SEO工具。
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+💻 後端使用Netlify部屬前端頁面，Heroku部屬後端Strapi
 
-2.  **Start developing.**
+📝資料使用開源CMS Strapi做管理，並部屬到Heroku上，添加Web Hooks當內容更新時，自動打包Netlify上的前端網站。
 
-    Navigate into your new site’s directory and start it up.
+## 1. 前端技術
+* React
+* Gatsby
+* styled-components
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## 2. 後端
+* [Heroku](https://www.heroku.com/)
+* [Netlify](https://www.netlify.com/)
 
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## 3. Headless CMS
+* [Strapi](https://strapi.io/)
