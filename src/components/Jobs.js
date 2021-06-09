@@ -1,29 +1,13 @@
 import React, { useState } from 'react'
+import styled from 'styled-components'
 import Title from './Title'
 import { FaAngleDoubleRight } from 'react-icons/fa'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from 'gatsby'
 
-const query = graphql`
-  {
-    allStrapiJob(sort: { fields: created_at, order: DESC }) {
-      nodes {
-        strapiId
-        company
-        companyInfo
-        date
-        desc {
-          id
-          name
-        }
-        stack {
-          id
-          title
-        }
-        position
-      }
-    }
-  }
+const CompanyInfoWrapper = styled.div`
+  line-height: 30px;
+  margin-bottom: 15px;
 `
 
 const Jobs = () => {
@@ -60,7 +44,7 @@ const Jobs = () => {
           {stack.map(item => {
             return <h4 key={item.id}>{item.title}</h4>
           })}
-          <p dangerouslySetInnerHTML={{ __html: companyInfo }}></p>
+          <CompanyInfoWrapper dangerouslySetInnerHTML={{ __html: companyInfo }}></CompanyInfoWrapper>
           {desc.map(item => {
             return (
               <div key={item.id} className="job-desc">
@@ -77,5 +61,27 @@ const Jobs = () => {
     </section>
   )
 }
+
+const query = graphql`
+  {
+    allStrapiJob(sort: { fields: created_at, order: DESC }) {
+      nodes {
+        strapiId
+        company
+        companyInfo
+        date
+        desc {
+          id
+          name
+        }
+        stack {
+          id
+          title
+        }
+        position
+      }
+    }
+  }
+`
 
 export default Jobs
