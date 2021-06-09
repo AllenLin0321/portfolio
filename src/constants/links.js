@@ -15,6 +15,11 @@ const data = [
     url: '/projects',
   },
   {
+    id: 4,
+    text: '履歷',
+    url: '/resume',
+  },
+  {
     id: 5,
     text: '聯絡我',
     url: '/contact',
