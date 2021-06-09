@@ -4,14 +4,36 @@ Project Template Page
 ===============
 */
 .project-template-page {
-  padding-top: 3rem;
+  padding: 3rem;
   text-align: center;
 }
 .project-template-page h2 {
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .project-template-page p {
   max-width: 35em;
   margin: 0 auto;
   margin-top: 2rem;
+}
+
+.project-template-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-template-img {
+  box-shadow: var(--dark-shadow);
+}
+
+@media screen and (min-width: 992px) {
+  .project-template-content {
+    flex-direction: row;
+  }
+
+  .project-template-img {
+    margin-right: 4rem;
+  }
 }

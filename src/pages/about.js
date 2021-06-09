@@ -1,16 +1,18 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Title from '../components/Title'
 import Seo from '../components/Seo'
 
 const About = ({ data }) => {
   const { title, info, stack, image } = data.strapiAbout
+  const imageURL = getImage(image.localFile)
   return (
     <>
       <Seo title="About" />
       <section className="about-page">
         <div className="section-center about-center">
-          <img src={image.localFile.publicURL} alt={title} className="about-img-svg" />
+          <GatsbyImage image={imageURL} alt={title} className="about-img-svg" />
           <article className="about-text">
             <Title title={title} />
             <p dangerouslySetInnerHTML={{ __html: info }}></p>
@@ -38,6 +40,9 @@ export const query = graphql`
       image {
         localFile {
           publicURL
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 700)
+          }
         }
       }
     }

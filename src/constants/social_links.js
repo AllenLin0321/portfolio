@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookSquare, FaLinkedin, FaGithubSquare, FaUserTie } from 'react-icons/fa'
+import { FaFacebookSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 
 const data = [
   {
