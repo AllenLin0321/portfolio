@@ -60,7 +60,7 @@ const Jobs = () => {
           {stack.map(item => {
             return <h4 key={item.id}>{item.title}</h4>
           })}
-          <p>{companyInfo}</p>
+          <p dangerouslySetInnerHTML={{ __html: companyInfo }}></p>
           {desc.map(item => {
             return (
               <div key={item.id} className="job-desc">
